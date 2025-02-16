@@ -1,5 +1,7 @@
 ## FinanceReasoning
 
+This project was developed with the assistance of modern AI-powered development tools, including Cursor IDE and Tongyi Qianwen. All code has been carefully reviewed to ensure originality and compliance with best practices. The implementation represents original work by the authors.
+
 The data and code for the paper `FinanceReasoning: Make Financial Numerical Reasoning More Credible, Comprehensive, and Challenging`.
 
 **FinanceReasoning** is a knowledge-intensive dataset focused on financial numerical reasoning. It requires the model to comprehend specialized financial terminology and to interpret tabular data presented in the questions. 
