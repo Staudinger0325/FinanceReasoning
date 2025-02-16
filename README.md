@@ -5,11 +5,7 @@ The data and code for the paper `FinanceReasoning: Make Financial Numerical Reas
 **FinanceReasoning** is a knowledge-intensive dataset focused on financial numerical reasoning. It requires the model to comprehend specialized financial terminology and to interpret tabular data presented in the questions. 
 
 ## FinanceReasoning Dataset
-All the data examples were divided into three subsets: *hard*, *medium*, and *easy*.
-
-- **hard**: 238 examples used for model development, validation, or for those with limited computing resources.
-- **medium**: 1000 examples for standard evaluation. We will not publicly release the annotated solution and answer for the test set.
-- **easy**: 1000 examples for standard evaluation. We will not publicly release the annotated solution and answer for the test set.
+Based on the difficulty of reasoning, we divided the problems into three subsets: *Easy* (1,000 examples), *Medium* (1,000 examples), and *Hard* (238 examples). 
 
 The dataset is provided in json format and contains the following attributes at the `data` directory:
 
@@ -52,11 +48,7 @@ We support inference with various LLM models through two approaches:
    ```bash
    python inference.py --config config/config.yaml
    ```
-   This method uses the configuration file to specify model settings, dataset parameters, and inference options. Key configurations include:
-   - Model selection (`model_name`)
-   - Dataset subset (`hard`, `medium`, `easy`)
-   - Prompt type (`cot`, `pot`)
-   - Output directory
+   This method uses the configuration file to specify model settings, dataset parameters, and inference options.
 
 2. **Batch API Inference**
    ```bash
