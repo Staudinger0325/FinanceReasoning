@@ -1,0 +1,301 @@
+[
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-llm-instruct",
+        "accuracy": 91.6,
+        "execution_rate": 100.0,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 82.76,
+            "Corporate & Securities Issuance": 66.67,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-without_judge",
+        "accuracy": 90.76,
+        "execution_rate": 98.74,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 75.86,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 40.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 93.1,
+            "Corporate & Securities Issuance": 66.67,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag",
+        "accuracy": 89.08,
+        "execution_rate": 99.58,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 82.76,
+            "Corporate & Securities Issuance": 0.0,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "claude-3-5-sonnet-20241022-rag-r1-inference",
+        "accuracy": 87.82,
+        "execution_rate": 99.58,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 79.31,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-reasoning-mini",
+        "accuracy": 87.82,
+        "execution_rate": 98.74,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 79.31,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 60.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 96.55,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 90.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "claude-3-5-sonnet-20241022-rag-o1-inference",
+        "accuracy": 87.39,
+        "execution_rate": 99.58,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 68.97,
+            "Corporate & Securities Issuance": 0.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-reasoning",
+        "accuracy": 87.39,
+        "execution_rate": 98.74,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 75.86,
+            "Corporate & Securities Issuance": 0.0,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 90.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-summary-r1",
+        "accuracy": 86.55,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 68.97,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 96.55,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-summary-o1",
+        "accuracy": 86.55,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 68.97,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 96.55,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "claude-3-5-sonnet-20241022",
+        "accuracy": 83.61,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 68.97,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 60.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 60.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 96.55,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-reasoning-mini",
+        "accuracy": 83.61,
+        "execution_rate": 98.74,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 58.62,
+            "Corporate & Securities Issuance": 0.0,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 90.0,
+            "Market Analysis & Economics": 60.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-rag-passage",
+        "accuracy": 81.93,
+        "execution_rate": 97.9,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 55.17,
+            "Corporate & Securities Issuance": 0.0,
+            "Accounting": 60.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 20.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 89.66,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "gpt-4o-2024-11-20-reasoning",
+        "accuracy": 80.67,
+        "execution_rate": 98.74,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 58.62,
+            "Corporate & Securities Issuance": 0.0,
+            "Accounting": 60.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 60.0,
+            "Quantitative Analysis & Valuation": 71.43,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 96.55,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    }
+]

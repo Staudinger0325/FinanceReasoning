@@ -1,0 +1,54 @@
+[
+    {
+        "question": "what would the 2012 shares outstanding in millions have been without the acquisition of smith international? Answer to the nearest integer.",
+        "context": "schlumberger limited and subsidiaries shares of common stock ( stated in millions ) issued in treasury shares outstanding .\n\n|  | Issued | In Treasury | Shares Outstanding |\n| :--- | :--- | :--- | :--- |\n| Balance, January 1, 2010 | 1,334 | (139) | 1,195 |\n| Acquisition of Smith International, Inc. | 100 | 76 | 176 |\n| Shares sold to optionees less shares exchanged | \u2013 | 6 | 6 |\n| Shares issued under employee stock purchase plan | \u2013 | 3 | 3 |\n| Stock repurchase program | \u2013 | (27) | (27) |\n| Issued on conversions of debentures | \u2013 | 8 | 8 |\n| Balance, December 31, 2010 | 1,434 | (73) | 1,361 |\n| Shares sold to optionees less shares exchanged | \u2013 | 6 | 6 |\n| Vesting of restricted stock | \u2013 | 1 | 1 |\n| Shares issued under employee stock purchase plan | \u2013 | 3 | 3 |\n| Stock repurchase program | \u2013 | (37) | (37) |\n| Balance, December 31, 2011 | 1,434 | (100) | 1,334 |\n| Shares sold to optionees less shares exchanged | \u2013 | 4 | 4 |\n| Shares issued under employee stock purchase plan | \u2013 | 4 | 4 |\n| Stock repurchase program | \u2013 | (14) | (14) |\n| Balance, December 31, 2012 | 1,434 | (106) | 1,328 |\n\nsee the notes to consolidated financial statements .\n",
+        "statistics": {
+            "number_statistics": {
+                "question_numbers": 0,
+                "context_numbers": 41,
+                "total_numbers": 41
+            },
+            "operator_statistics": {
+                "operators": {
+                    "+": 0,
+                    "-": 7,
+                    "*": 0,
+                    "/": 0,
+                    "%": 0,
+                    "**": 0
+                },
+                "total_operators": 7
+            },
+            "code_statistics": {
+                "lines": 9,
+                "parentheses": 0
+            }
+        },
+        "difficulty": 4.143134726391533,
+        "ground_truth": 1152,
+        "source": "CodeFinQA-test-697",
+        "python_solution": "shares_outstanding = 1328\nacquisition_cost = 176\nshares_sold = 0\noption_exchanged = 0\nemployee_plan = 0\nstock_repurchase = 0\nconversion_debentures = 0\nvesting_restricted_stock = 0\nanswer = shares_outstanding - acquisition_cost - shares_sold - option_exchanged - employee_plan - stock_repurchase - conversion_debentures - vesting_restricted_stock",
+        "question_id": "test-2000",
+        "level": "hard",
+        "output": [
+            "```python\ndef solution():\n    # Define variables name and value\n    initial_outstanding_2010 = 1195  # Shares outstanding on January 1, 2010\n    smith_acquisition_contribution = 176  # Shares added due to Smith International acquisition\n    shares_outstanding_2012 = 1328  # Shares outstanding at the end of 2012\n    \n    # Calculate the 2012 shares outstanding without the Smith International acquisition\n    outstanding_without_smith = shares_outstanding_2012 - smith_acquisition_contribution\n    \n    # Return the answer rounded to the nearest integer\n    return round(outstanding_without_smith)\n\n```"
+        ],
+        "retrieval_query": "",
+        "useful_functions": [],
+        "usage": {
+            "completion_tokens": 136,
+            "prompt_tokens": 733,
+            "total_tokens": 869,
+            "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+            }
+        }
+    }
+]

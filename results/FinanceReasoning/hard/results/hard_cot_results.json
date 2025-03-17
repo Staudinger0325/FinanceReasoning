@@ -1,0 +1,117 @@
+[
+    {
+        "model_name": "r1-rag-function-llm-instruct",
+        "accuracy": 86.97,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 82.76,
+            "Corporate & Securities Issuance": 66.67,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 90.0,
+            "Market Analysis & Economics": 60.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 66.67
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "r1-rag-function-without_judge",
+        "accuracy": 85.29,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 79.31,
+            "Corporate & Securities Issuance": 66.67,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 80.0,
+            "Market Analysis & Economics": 60.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "r1-rag-function-judge",
+        "accuracy": 84.87,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 82.76,
+            "Corporate & Securities Issuance": 66.67,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 70.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "o1",
+        "accuracy": 82.77,
+        "execution_rate": 99.58,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 68.97,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 60.0,
+            "Market Analysis & Economics": 80.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 96.55,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    },
+    {
+        "model_name": "r1-rag-passage",
+        "accuracy": 82.77,
+        "execution_rate": 99.16,
+        "topic_accuracy": {
+            "Asset Classes & Derivatives": 72.41,
+            "Corporate & Securities Issuance": 33.33,
+            "Accounting": 80.0,
+            "Portfolio Management & Strategy": 70.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 85.71,
+            "Risk Management": 33.33
+        },
+        "topic_execution_rate": {
+            "Asset Classes & Derivatives": 100.0,
+            "Corporate & Securities Issuance": 100.0,
+            "Accounting": 100.0,
+            "Portfolio Management & Strategy": 100.0,
+            "Market Analysis & Economics": 100.0,
+            "Quantitative Analysis & Valuation": 100.0,
+            "Risk Management": 100.0
+        }
+    }
+]

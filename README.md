@@ -4,7 +4,7 @@ This project was developed with the assistance of modern AI-powered development 
 
 The data and code for the paper `FinanceReasoning: Make Financial Numerical Reasoning More Credible, Comprehensive, and Challenging`.
 
-**FinanceReasoning** is a knowledge-intensive dataset focused on financial numerical reasoning. It requires the model to comprehend specialized financial terminology and to interpret tabular data presented in the questions. 
+**FinanceReasoning** is a a novel benchmark designed to evaluate the reasoning capabilities of large reasoning models (LRMs) in financial numerical reasoning problems. 
 
 ## FinanceReasoning Dataset
 Based on the difficulty of reasoning, we divided the problems into three subsets: *Easy* (1,000 examples), *Medium* (1,000 examples), and *Hard* (238 examples). 
@@ -29,7 +29,31 @@ The dataset is provided in json format and contains the following attributes at 
 }
 ```
 
-## Experiments
+## Financial Functions Library
+
+The financial functions library is a collection of financial functions that are used to solve the financial numerical reasoning problems. It is provided in json format and contains the following attributes at the `data/functions` directory:
+
+```json
+{
+    "function_id": "[string] Unique identifier for the function",
+    "function": "[string] The function code",
+    "function_docstring": "[string] The docstring of the function"
+}
+```
+
+## Financial Documents Library
+
+The financial documents library is a collection of financial documents that are used to solve the financial numerical reasoning problems. It is provided in json format and contains the following attributes at the `data/documents` directory:
+
+```json
+{
+    "document_id": "[string] Unique identifier for the document",
+    "document": "[string] The document text",
+    "document_docstring": "[string] The docstring of the document"
+}
+```
+
+## Experiments (Main Results)
 
 ### Environment Setup
 You can install the dependencies by the following command:
@@ -76,3 +100,51 @@ Evaluate model performance using:
 ```bash
 python evaluation.py --config config/config.yaml
 ```
+
+## Experiments (Additional Results)
+### Complete the .env file
+
+Replace the `API_KEY` and `BASE_URL` in the `.env` file with your own API key and base URL.
+
+### Run Function Retrieval Server
+
+```bash
+python serve_retriever_function.py
+```
+
+### Run Section Retrieval Server (Optional for Passage Retrieval, replace the port if necessary)
+
+```bash
+python serve_retriever_section.py
+```
+
+### Run RAG and Model Combination Parallel Inference
+
+```bash
+python rag_parallel.py
+```
+
+You can set the arguments as follows:
+
+dataset = 'FinanceReasoning'
+subset = 'hard'
+prompt_type = 'cot_rag'
+model_name = 'gpt-4o-2024-11-20'
+model_name_file = 'gpt-4o-2024-11-20'
+llm_instruct = True
+use_article = True
+use_reasoning = False
+use_retrieved_cache = False
+retrieved_type = 'function'
+judge_useful_functions = True
+use_useful_cache = True
+top_k = 30
+input_file = f'./data/{dataset}/{subset}.json'
+
+### Results of RAG and Model Combination Parallel Inference
+
+The CoT outputs are stored in the `results/FinanceReasoning/hard/raw_cot_outputs` and `results/FinanceReasoning/hard/processed_cot_outputs` directory.
+The CoT results are stored in the `results/FinanceReasoning/hard/results/hard_cot_results.json`
+
+The PoT outputs are stored in the `results/FinanceReasoning/hard/raw_pot_outputs` and `results/FinanceReasoning/hard/processed_pot_outputs` directory.
+The PoT results are stored in the `results/FinanceReasoning/hard/results/hard_pot_results.json`
