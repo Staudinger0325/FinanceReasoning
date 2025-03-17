@@ -49,7 +49,7 @@ OPENAI_CLIENT.api_key = os.getenv('OPENAI_API_KEY')
 EMBEDDING_MODELS = {
     "contriever-msmarco":{
         "type": "hf",
-        "path": "/home/yangzhongjun/models/contriever-msmarco",
+        "path": "facebook/contriever-msmarco",
         "projection_size": 768,
     },
     "text-embedding-3-small":{
