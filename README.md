@@ -2,7 +2,7 @@
 
 This project was developed with the assistance of modern AI-powered development tools, including Cursor IDE and Tongyi Qianwen. All code has been carefully reviewed to ensure originality and compliance with best practices. The implementation represents original work by the authors.
 
-The data and code for the paper `FinanceReasoning: Make Financial Numerical Reasoning More Credible, Comprehensive, and Challenging`.
+The data and code for the paper `FinanceReasoning: Benchmarking Financial Numerical Reasoning More Credible, Comprehensive and Challenging`.
 
 **FinanceReasoning** is a a novel benchmark designed to evaluate the reasoning capabilities of large reasoning models (LRMs) in financial numerical reasoning problems. 
 
